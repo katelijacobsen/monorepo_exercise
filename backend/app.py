@@ -17,9 +17,16 @@ app = Flask(__name__)
 app.config['SESSION_TYPE'] = 'filesystem'
 Session(app)
 
-CORS(app, origins=["http://localhost:3000"])
+CORS(app)
 
 ##############################
 @app.route("/")
 def show_index():
     return render_template("index.html")
+
+
+@app.get("api-get-user")
+def get_user():
+    name = "Kat" #This comes from the database
+    data = {"name":name} #dictionary aka json
+    return jsonify(data)
