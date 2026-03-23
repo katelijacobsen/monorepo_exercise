@@ -26,7 +26,7 @@ def show_index():
 
 
 @app.get("/api-get-name")
-def get_name():
+def api_get_name():
     name = "Kat" #This comes from the database
     data = {"name":name} #dictionary aka json
     return jsonify(data)
