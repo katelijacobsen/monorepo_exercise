@@ -1,4 +1,6 @@
-import axios from 'axios'
+import axios from "axios";
 
-export const getName = (url: string) =>
-  axios.get(url).then(res => res.data)
+export const getName = async () => {
+  const res = await axios.get(`/api-get-name`);
+  return res.data;
+};

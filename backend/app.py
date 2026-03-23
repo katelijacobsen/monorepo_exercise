@@ -25,7 +25,7 @@ def show_index():
     return render_template("index.html")
 
 
-@app.get("api-get-name")
+@app.get("/api-get-name")
 def get_name():
     name = "Kat" #This comes from the database
     data = {"name":name} #dictionary aka json

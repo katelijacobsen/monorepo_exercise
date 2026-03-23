@@ -10,7 +10,7 @@ def db():
             host = "mariadb",
             user = "root",  
             password = "password",
-            database = "wash_world"
+            database = "monorepo"
         )
         cursor = db.cursor(dictionary=True)
         return db, cursor
