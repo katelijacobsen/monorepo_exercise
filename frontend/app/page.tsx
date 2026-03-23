@@ -6,7 +6,7 @@ import { getName } from "@/lib/api";
 
 export default function Home() {
   const { data, error, isLoading } = useSWR(
-    "${process.env.NEXT_PUBLIC_API_URL}/get-name",
+    "${process.env.NEXT_PUBLIC_API_URL}/api-get-name",
     getName,
   );
 
