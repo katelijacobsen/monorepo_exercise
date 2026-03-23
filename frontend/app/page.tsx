@@ -11,6 +11,6 @@ export default function Home() {
   if (error) return <p>Error fetching name</p>;
 
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">Hello, {data.name}!</div>
+    <div >Hello, {data.name}!</div>
   );
 }
